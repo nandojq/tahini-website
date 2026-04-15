@@ -5,7 +5,16 @@
       "Bash(npm --version)",
       "Bash(npx create-next-app@latest . --typescript --tailwind --eslint --app --src-dir --import-alias \"@/*\" --use-npm --yes)",
       "Bash(npm install:*)",
-      "Bash(npx shadcn@latest init --yes --defaults)"
+      "Bash(npx shadcn@latest init --yes --defaults)",
+      "Bash(npx shadcn@latest add tabs dialog select label input textarea --yes)",
+      "Bash(npm run:*)",
+      "Bash(node -e ' *)",
+      "Bash(npx --yes pdf-parse-cli context/TAHINI_EPK_EN_260413_221933.pdf)",
+      "Bash(magick --version)",
+      "Bash(convert --version)",
+      "Bash(ffmpeg -version)",
+      "Bash(node -e \"require\\('sharp'\\)\")",
+      "Bash(node)"
     ]
   }
 }
