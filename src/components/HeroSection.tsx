@@ -44,8 +44,7 @@ export default function HeroSection() {
           transition={{ duration: 0.7, ease: "easeOut", delay: 0.3 }}
           className="text-lg sm:text-xl text-foreground/60 max-w-lg"
         >
-          The Brussels retro pop band that turns lazy afternoons into
-          danceable nights.
+          The Brussels band that turns lazy afternoons into danceable nights.
         </motion.p>
 
         <motion.div
