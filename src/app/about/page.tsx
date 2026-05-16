@@ -18,10 +18,7 @@ function MemberCard({ member }: { member: Member }) {
       <div>
         <p className="font-heading text-lg font-semibold">{member.name}</p>
         {member.instrument && (
-          <p className="text-sm text-accent-terra mb-2">{member.instrument}</p>
-        )}
-        {member.bio && (
-          <p className="text-sm text-foreground/60 leading-relaxed">{member.bio}</p>
+          <p className="text-sm text-accent-terra">{member.instrument}</p>
         )}
       </div>
     </div>
@@ -49,7 +46,7 @@ export default function AboutPage() {
           />
         </div>
         <div className="flex flex-col gap-6">
-          <h1 className="font-heading text-5xl font-semibold leading-tight">
+          <h1 className="font-heading text-4xl font-semibold leading-tight whitespace-nowrap">
             The groove from Brussels
           </h1>
           <p className="text-foreground/70 leading-relaxed">

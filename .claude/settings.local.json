@@ -14,7 +14,13 @@
       "Bash(convert --version)",
       "Bash(ffmpeg -version)",
       "Bash(node -e \"require\\('sharp'\\)\")",
-      "Bash(node)"
+      "Bash(node)",
+      "WebSearch",
+      "WebFetch(domain:open.spotify.com)",
+      "WebFetch(domain:tidal.com)",
+      "WebFetch(domain:music.apple.com)",
+      "WebFetch(domain:linktr.ee)",
+      "WebFetch(domain:tahinituesday.bandcamp.com)"
     ]
   }
 }

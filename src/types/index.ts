@@ -28,21 +28,17 @@ export interface PressQuote {
   url?: string;
 }
 
-export type GalleryCategory = "Live" | "Press";
-
 export interface GalleryImage {
   id: string;
   src: string;
   alt: string;
   width: number;
   height: number;
-  category: GalleryCategory;
 }
 
 export interface Member {
   id: string;
   name: string;
   instrument: string;
-  bio: string;
   photoSrc: string;
 }

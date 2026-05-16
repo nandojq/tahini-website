@@ -5,6 +5,15 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
+import { FaInstagram, FaSpotify } from "react-icons/fa";
+import { SiTidal, SiApplemusic } from "react-icons/si";
+
+const socials = [
+  { label: "Instagram", href: "https://www.instagram.com/tahinituesday", icon: FaInstagram },
+  { label: "Spotify", href: "https://open.spotify.com/intl-de/artist/6eXFgjt94XSX6uP8vJODDI", icon: FaSpotify },
+  { label: "Tidal", href: "https://tidal.com/browse/artist/31684124?u", icon: SiTidal },
+  { label: "Apple Music", href: "https://music.apple.com/de/artist/tahini-tuesday/1618984100", icon: SiApplemusic },
+];
 
 const links = [
   { href: "/", label: "Home" },
@@ -59,6 +68,22 @@ export default function Nav() {
             ))}
           </ul>
 
+          {/* Desktop social icons */}
+          <div className="hidden md:flex items-center gap-3">
+            {socials.map(({ label, href, icon: Icon }) => (
+              <a
+                key={label}
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={label}
+                className="text-foreground/50 hover:text-accent-terra transition-colors"
+              >
+                <Icon size={18} />
+              </a>
+            ))}
+          </div>
+
           {/* Hamburger */}
           <button
             onClick={() => setIsOpen((o) => !o)}
@@ -89,6 +114,20 @@ export default function Nav() {
               </li>
             ))}
           </ul>
+          <div className="flex items-center gap-4 px-4 py-3 border-t border-accent-warm">
+            {socials.map(({ label, href, icon: Icon }) => (
+              <a
+                key={label}
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={label}
+                className="text-foreground/50 hover:text-accent-terra transition-colors"
+              >
+                <Icon size={20} />
+              </a>
+            ))}
+          </div>
         </div>
       )}
     </nav>
