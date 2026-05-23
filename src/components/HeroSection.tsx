@@ -21,7 +21,7 @@ export default function HeroSection() {
           transition={{ duration: 0.7, ease: "easeOut", delay: 0 }}
         >
           <span className="text-xs uppercase tracking-[0.25em] text-accent-terra font-semibold">
-            Brussels · Indie Funk · Retro Soul
+            INDIE · FUNK · JAZZ
           </span>
         </motion.div>
 
@@ -44,7 +44,9 @@ export default function HeroSection() {
           transition={{ duration: 0.7, ease: "easeOut", delay: 0.3 }}
           className="text-lg sm:text-xl text-foreground/60 max-w-lg"
         >
-          The Brussels band that turns lazy afternoons into danceable nights.
+          The Brussels band that turns lazy
+          <br />
+          afternoons into danceable nights
         </motion.p>
 
         <motion.div
